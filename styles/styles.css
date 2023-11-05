@@ -309,12 +309,24 @@ h4 {
 
 .record {
     display: flex;
+    position: relative;
     justify-content: center;
     gap: 144px;
     color: #FFFFFF;
     background-color: #D52027;
 
     padding: 87px 0;
+}
+
+.decoration {
+    position: absolute;
+    bottom: 0;
+    left: -10000px;
+    width: 20000px;
+    height: 110px;
+    background-image: url("../image/%.png");
+    background-position: 0 10px;
+    background-repeat: repeat-x;
 }
 
 .record__title {
@@ -333,6 +345,7 @@ h4 {
 .form {
     display: flex;
     flex-direction: column;
+    z-index: 2;
 }
 
 .form input {
